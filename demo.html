@@ -1,0 +1,34 @@
+<html>
+<head>
+<title>innerLabels Demo Page</title>
+<style type="text/css">
+body{font-family:sans-serif}
+.myinput{position:relative; height:24px; width:192px; background-color:#eee; border:1px solid #333;margin:4px 0 4px 0}
+label{position:absolute;top:0;left:0;color:#666;z-index:0;padding:4px}
+.txtbox{position:absolute;top:0;left:0;border:none;outline:none;background:transparent;padding:4px;width:186px;z-index:1}
+fieldset{width:198px;border:1px solid #999}
+</style>
+<script src="http://code.jquery.com/jquery-1.6.min.js"></script>
+<script src="jquery.innerlabels.js"></script>
+<script>
+        $(document).ready(function(){
+            $('.txtbox').innerLabels();
+        });
+</script>
+</head>
+<body>
+<h2>Login form</h2>
+<form action="script.php">
+<fieldset>
+<div class="myinput">
+<label for="username">Enter user name</label><input type="text" name="username" class="txtbox" />
+</div>
+<div class="myinput">
+<label for="username">Enter password</label><input type="password" name="username" class="txtbox" />
+</div>
+<input type="submit" value=" Login ">
+</fieldset>
+</form>
+
+</body>
+</html>
