@@ -5,7 +5,7 @@
             if($(this).val()) label.hide();
             $(this).bind({
                 focus: function() { label.hide(); },
-                blur: function() { if(!$(this).val()) label.show(); }
+                blur: function() { if(!$(this).val()) label.show(); },
                 change: function() { if(!$(this).val()) label.show(); }
             });
         });
